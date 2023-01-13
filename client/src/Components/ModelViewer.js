@@ -18,19 +18,34 @@ function ModelViewer(props) {
       >
         <a-entity id="sceneContainer">
           <a-sky color="aliceblue"></a-sky>
-          <a-box
-            position="0 1 -4"
-            color="red"
-            drag-rotate-component
-            visible="false"
-          ></a-box>
+          <a-entity id="lightingContainer" drag-rotate-component>
+            <a-light
+              type="directional"
+              position="-1 2 0"
+              rotation="-90 0 0"
+              target="#directionaltarget"
+            >
+              <a-entity id="directionaltarget" position="0 0.8 -2"></a-entity>
+            </a-light>
+
+            <a-light
+              type="directional"
+              position="2 3 -2"
+              rotation="-90 0 0"
+              target="#directionaltarget"
+            >
+              <a-entity id="directionaltarget" position="0 0.8 -2"></a-entity>
+            </a-light>
+          </a-entity>
           <a-entity
             gltf-model={
-              "url(" + process.env.PUBLIC_URL + "/models/BrainStem.gltf)"
+              "url(" +
+              process.env.PUBLIC_URL +
+              "models/helmet/DamagedHelmet.gltf)"
             }
-            drag-rotate-component
-            position="0 0 -1.5"
-            scale="0.8 0.8 0.8"
+            position="0 0.8 -2"
+            rotation="0 30 0"
+            scale="1 1 1"
           ></a-entity>
         </a-entity>
         <a-entity
