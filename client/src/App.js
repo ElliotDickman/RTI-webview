@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Landing from "./Components/Landing";
+import ModelViewer from "./Components/ModelViewer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>RTI web viewer</p>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Landing />}></Route>
+        <Route path="/model" element={<ModelViewer />}></Route>
+      </Routes>
+    </Router>
   );
 }
 
