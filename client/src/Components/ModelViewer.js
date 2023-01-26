@@ -1,9 +1,10 @@
-import "aframe";
-require("./AFrame/AFrameComponents");
+import 'aframe';
+import styles from './ModelViewer.module.css';
+require('./AFrame/AFrameComponents');
 
 function ModelViewer(props) {
   return (
-    <div>
+    <div className={styles.embeddedSceneContainer}>
       <data-handler
         id="dataHandler"
         data-id="none"
@@ -15,6 +16,7 @@ function ModelViewer(props) {
         renderer="colorManagement: true;"
         cursor="rayOrigin: mouse"
         vr-mode-ui="enabled: false"
+        embedded
       >
         <a-entity id="sceneContainer">
           <a-sky color="aliceblue"></a-sky>
@@ -39,9 +41,9 @@ function ModelViewer(props) {
           </a-entity>
           <a-entity
             gltf-model={
-              "url(" +
+              'url(' +
               process.env.PUBLIC_URL +
-              "models/helmet/DamagedHelmet.gltf)"
+              'models/helmet/DamagedHelmet.gltf)'
             }
             position="0 0.8 -2"
             rotation="0 30 0"
