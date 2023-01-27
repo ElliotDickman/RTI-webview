@@ -1,0 +1,88 @@
+@import url('../Styles/styles.css');
+
+:root {
+  --icon-size: 3em;
+}
+
+.panelContainer {
+  display: flex;
+  justify-content: right;
+  padding: 3vh;
+}
+
+.modeIcons {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5em;
+  padding-right: 2em;
+}
+
+.modeIcon {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  border-radius: var(--icon-size);
+  background-color: var(--gray-mid);
+  cursor: pointer;
+  transition: background-color 1s;
+}
+
+.modeIcon.active {
+  background-color: var(--black);
+}
+
+.sidePanelContainer {
+  height: 90vh;
+  width: 40%;
+  right: 2em;
+  top: 3vh;
+  background-color: var(--gray-light);
+  padding: 2vh 2em;
+  border-radius: 0.5em;
+  overflow-x: hidden;
+  transition: width 0.5s, padding 0.5s;
+}
+
+.sidePanelContainer.hidden {
+  width: 0;
+  padding: 0;
+}
+
+.sidePanelHeader {
+  height: 4em;
+  display: flex;
+
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.sidePanelTitle {
+  color: white;
+  font-family: 'Roboto';
+  font-size: 16px;
+  background-color: var(--black);
+  padding: 5px 16px;
+  width: min-content;
+  height: 24px;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.sidePanelHide {
+  background-color: var(--black);
+  height: 24px;
+  width: 24px;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.infoImage {
+  width: 100%;
+  height: 300px;
+  background-color: var(--gray-mid);
+  margin-bottom: 2em;
+}
+
+.infoBody {
+  font-family: 'Roboto';
+}

@@ -19,7 +19,7 @@ function ModelViewer(props) {
         embedded
       >
         <a-entity id="sceneContainer">
-          <a-sky color="aliceblue"></a-sky>
+          <a-sky color="white"></a-sky>
           <a-entity id="lightingContainer" drag-rotate-component>
             <a-light
               type="directional"
