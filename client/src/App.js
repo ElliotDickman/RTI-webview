@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Landing from './Components/Landing';
-import ModelViewer from './Components/ModelViewer';
-import ModelPage from './Components/ModelPage';
+import Landing from './Path/Landing';
+// import ModelViewer from './Components/ModelViewer';
+import ModelPage from './Components/ModelPage/ModelPage';
 
 function App() {
   return (

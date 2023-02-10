@@ -1,5 +1,5 @@
 import logo from "../logo.svg";
-import LandingHeader from "./LandingHeader";
+import LandingHeader from "../Components/LandingHeader/LandingHeader";
 
 import "../App.css";
 

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import ModelViewer from './ModelViewer';
-import SidePanel from './SidePanel';
-import { sampleWork } from '../sampleData';
+import ModelViewer from '../ModelViewer/ModelViewer';
+import SidePanel from '../SidePanel/SidePanel';
+import { sampleWork } from '../../sampleData';
 import styles from './ModelPage.module.css';
 
 export const Modes = Object.freeze({
