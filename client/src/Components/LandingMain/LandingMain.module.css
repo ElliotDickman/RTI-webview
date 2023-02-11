@@ -1,0 +1,14 @@
+.mainContainer {
+    margin-top: 1rem;
+}
+
+.resultAndSort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.result {
+    font-size: 16px;
+    color: var(--black);
+}

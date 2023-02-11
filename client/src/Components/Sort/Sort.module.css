@@ -1,0 +1,41 @@
+.sortOptionListBox {
+    width: 12rem;
+    position: relative;
+}
+
+.sortOptionButton {
+    height: 2rem;
+    border: 0.1rem solid var(--gray-mid);
+    background-color: inherit;
+    border-radius: 9999px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    padding: 0 0.75rem;
+}
+
+.sortOptionOptions {
+    border-radius: 0.75rem;
+    width: 10rem;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0.25rem;
+    overflow: hidden;
+    position: absolute;
+    border: 0.1rem solid var(--gray-mid);
+}
+
+.sortOptionOption {
+    height: 2rem;
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sortOptionOption:hover {
+    background-color: var(--gray-light);
+}

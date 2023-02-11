@@ -1,0 +1,37 @@
+.filterButton {
+    width: 10rem;
+    height: 2rem;
+    border: none;
+    background-color: var(--gray-light);
+    color: var(--black);
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    border-radius: 9999px;
+}
+
+.filterOptions {
+    border-radius: 0.75rem;
+    background-color: var(--gray-light);
+    color: var(--black);
+    width: 10rem;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0.25rem;
+    overflow: hidden;
+    position: absolute;
+}
+
+.filterOption {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 13px;
+    color: var(--black);
+}
+
+.filterOption:hover {
+    background-color: var(--gray-mid);
+    color: var(--white);
+}
