@@ -1,0 +1,90 @@
+.searchContainer {
+    border: 0.1rem solid var(--black);
+    border-radius: 9999px;
+    height: 2.5rem;
+}
+
+.search {
+    display: flex;
+    height: 100%;
+}
+
+.advancedSearchButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    background-color: (var(--black));
+    color: var(--gray-light);
+    font-size: 1rem;
+    padding: 0 1.5rem;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+  
+.dropdown {
+    background: var(--black);
+    border-radius: 9999px 0 0 9999px;
+    width: 10rem;
+    position: relative;
+    cursor: pointer;
+}
+  
+.dropdownMenu {
+    width: 100%;
+    height: 100%;
+}
+
+.dropdownMenuItems {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    list-style-type: none;
+    margin: 0.25rem 0 0 0;
+    padding: 0;
+    border-radius: 12px;
+    border: 1px solid var(--black);
+    overflow: hidden;
+}
+  
+.dropdownMenuItem {
+    border: none;
+    background-color: var(--black);
+    color: var(--gray-light);
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    padding: 0 1.5rem;
+}
+  
+.dropdownMenuItem:hover {
+    background-color: var(--gray-light);
+    color: var(--black);
+    user-select: none;
+}
+  
+.searchFieldContainer {
+    flex-grow: 1;
+}
+
+.inputField {
+    border: none;
+    font-size: 1rem;
+    height: 100%;
+    padding: 0 1rem;
+    width: 100%;
+    outline: none;
+}
+
+.magnifyingGlass {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    padding: 0 1.5rem;
+    border: none;
+    border-radius: 0 9999px 9999px 0 ;
+    cursor: pointer;
+}
