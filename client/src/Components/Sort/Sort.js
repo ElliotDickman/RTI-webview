@@ -1,19 +1,25 @@
 import React, { useState } from "react";
 import { Listbox } from "@headlessui/react";
-import styles from "./Filter.module.css";
+import styles from "./Sort.module.css";
 
-const Filter = ({ data }) => {
-  const [selectedData, setselectedData] = useState(data[0]);
+const Sort = () => {
+  const sortOptions = [
+    { id: 1, name: "Date (oldest-newest)" },
+    { id: 2, name: "Date (newest-oldest)" },
+    { id: 3, name: "Name (A-Z)" },
+    { id: 4, name: "Name (Z-A)" },
+  ];
+  const [selected, setSelected] = useState(sortOptions[0]);
 
   return (
     <Listbox
       as="div"
-      className={`${styles.filterListBox}`}
-      value={selectedData}
-      onChange={setselectedData}
+      className={`${styles.sortOptionListBox}`}
+      value={selected}
+      onChange={setSelected}
     >
-      <Listbox.Button type="button" className={`${styles.filterButton}`}>
-        {selectedData.name}
+      <Listbox.Button type="button" className={`${styles.sortOptionButton}`}>
+        {selected.name}
         <svg
           width="11"
           height="8"
@@ -27,14 +33,14 @@ const Filter = ({ data }) => {
           />
         </svg>
       </Listbox.Button>
-      <Listbox.Options className={`${styles.filterOptions}`}>
-        {data.map((data) => (
+      <Listbox.Options className={`${styles.sortOptionOptions}`}>
+        {sortOptions.map((sortOption) => (
           <Listbox.Option
-            className={`${styles.filterOption}`}
-            key={data.id}
-            value={data}
+            className={`${styles.sortOptionOption}`}
+            key={sortOption.id}
+            value={sortOption}
           >
-            {data.name}
+            {sortOption.name}
           </Listbox.Option>
         ))}
       </Listbox.Options>
@@ -42,4 +48,4 @@ const Filter = ({ data }) => {
   );
 };
 
-export default Filter;
+export default Sort;
