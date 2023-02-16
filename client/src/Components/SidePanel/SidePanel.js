@@ -1,5 +1,6 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import { Modes } from '../ModelPage/ModelPage';
+import Information from '../Information/Information';
 import styles from './SidePanel.module.css';
 import CloseBtn from '../CloseBtn/CloseBtn';
 
@@ -76,22 +77,29 @@ function SidePanel(props) {
             styles.sidePanelContainer
           }`}
         >
-          <div className={`${styles.sidePanelHeader}`}>
-            <div className={`${styles.sidePanelTitle}`}>{mode}</div>
+          <div className={`${styles.sidePanel}`}>
+            {/* Panel Header */}
+            <div className={`${styles.sidePanelHeader}`}>
+              <div className={`${styles.sidePanelTitle}`}>{mode}</div>
 
-            <CloseBtn />
+              <CloseBtn Click={() => setVisible(false)} isOpen={visible} />
+            </div>
 
-            <div
-              className={`${styles.sidePanelHide}`}
-              onClick={() => {
-                setVisible(false);
-              }}
-            ></div>
-          </div>
+            <div className={`${styles.sidePanelBody}`}>
+              {/* Description */}
+              {/* <div className={`${styles.infoImage}`}></div>
+              <div
+                className={`${styles.infoBody} ${visible ? '' : styles.hidden}`}
+              >
+                {work.desc}
+              </div> */}
+              <Information visible={visible} data={work}></Information>
 
-          <div className={`${styles.sidePanelBody}`}>
-            <div className={`${styles.infoImage}`}></div>
-            <div className={`${styles.infoBody}`}>{work.desc}</div>
+              {/* Ruler */}
+
+              
+
+            </div>
           </div>
         </div>
       </div>

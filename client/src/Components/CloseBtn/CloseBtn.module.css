@@ -1,8 +1,42 @@
 .CloseBtn{
   height: 1.5rem;
-  width: 1,5rem;
+  width: 1.5rem;
+  position: relative;
+
+  cursor: pointer;
 }
 
-.clsoeBtn::before{
-  
+.CloseBtn::before, .CloseBtn::after{
+  content: "";
+  display: block;
+  position: absolute;
+  height: 1px;
+  width: 1.5rem;
+  border-radius: 1rem;
+  background-color: black;
+
+  top: calc(50% - .5px);
+  left: 0;
+
+  transition: .3s;
+}
+
+.CloseBtn:hover::before, .CloseBtn:hover::after{
+  scale: 1.2;
+}
+
+.CloseBtn::before{
+  transform: rotate(45deg);
+}
+
+.CloseBtn::after{
+  transform: rotate(-45deg);
+}
+
+.Open::before{
+  transform: rotate(0);
+}
+
+.Open::after{
+  transform: rotate(0);
 }

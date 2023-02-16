@@ -1,0 +1,41 @@
+.infoImage {
+  max-width: 100%;
+  height: 300px;
+  background-color: var(--gray-mid);
+  margin-bottom: 1rem;
+}
+
+.infoBody {
+  font-family: 'Roboto';
+  opacity: 1;
+  animation: textReveal 1s forwards;
+}
+
+@keyframes textReveal {
+  0%{
+    opacity: 0%;
+  }
+  75%{
+    opacity: 0%;
+  }
+  100%{
+    opacity: 100%;
+  }
+}
+
+@keyframes textHide {
+  0%{
+    opacity: 100%;
+  }
+  15%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 0%;
+  }
+}
+
+.infoBody.hidden {
+  animation: textHide 1s forwards;
+}

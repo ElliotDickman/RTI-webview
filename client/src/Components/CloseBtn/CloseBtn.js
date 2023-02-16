@@ -1,10 +1,11 @@
 import styles from "./CloseBtn.module.css";
+import { useState } from "react";
 
 
-function CloseBtn(props) {
+function CloseBtn({isOpen, Click, props}) {
+
   return (
-    <div className={`${styles.CloseBtn}`}>
-      <div>test</div>
+    <div onClick={Click} className={`${styles.CloseBtn}  ${isOpen ? "" : styles.Open }`}>
     </div>
   );
 }
