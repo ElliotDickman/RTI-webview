@@ -1,0 +1,128 @@
+@import url('../../Styles/styles.css');
+
+.ColorPickerContainer {
+  display: flex;
+  gap: 0.75rem;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.ColorPicker {
+  width: 10rem;
+  height: 10rem;
+  position: relative;
+}
+
+.ColorPickerBtn {
+  position: absolute;
+  border-radius: 100%;
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: var(--gray-light);
+  border: 2px solid var(--black);
+  left: 0;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.ColorPickerBtn:hover {
+  background-color: var(--white);
+}
+
+.Magnifier {
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  border: 3px solid var(--gray-mid);
+}
+
+.ColorData {
+  font-family: 'Roboto';
+  font-size: 0.875rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  column-gap: 1rem;
+}
+.data {
+  font-weight: 300;
+}
+.data span {
+  margin-right: 0.5rem;
+  font-weight: 400;
+}
+
+.BreakLine {
+  height: 2px;
+  width: 100%;
+  background-color: var(--gray-mid);
+}
+
+.ColorLibraryContainer {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
+
+.ColorLibraryHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ColorLibraryHeader p {
+  /* font-size: 0.75rem; */
+}
+
+.ColorLibrary {
+  display: flex;
+  width: 100%;
+  min-height: 100px;
+  padding: .25rem;
+  gap: .25rem;
+  font-size: .75rem;
+}
+
+.Color {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.CopyLibrary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.CopyLibrary span {
+  display: flex;
+  justify-content: flex-end;
+  gap: .5rem;
+  align-items: center;
+}
+
+.CopyLibrary label{
+  font-weight: 500;
+}
+
+.CopyLibrary select {
+  padding: 0 0.25rem;
+  border: 2px solid var(--gray-mid);
+  border-radius: 0.25rem;
+  height: 1.5rem;
+}
+
+.CopyLibrary button {
+  height: 1.5rem;
+  padding-inline: .75rem;
+  background-color: var(--gray-dark);
+  border: 0;
+  border-radius: .25rem;
+}

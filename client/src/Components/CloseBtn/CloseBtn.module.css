@@ -40,3 +40,12 @@
 .Open::after{
   transform: rotate(0);
 }
+
+.arrow{
+  transition: .3s;
+}
+
+.arrow:hover{
+  scale: 1.2;
+  cursor: pointer;
+}

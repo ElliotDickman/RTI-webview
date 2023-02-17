@@ -39,3 +39,8 @@
 .infoBody.hidden {
   animation: textHide 1s forwards;
 }
+
+.sidePanelBody{
+  overflow: scroll;
+  width: 100%;
+}

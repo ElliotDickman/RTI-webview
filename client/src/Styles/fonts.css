@@ -36,6 +36,8 @@
 @font-face {
   font-family: 'Roboto';
   src: url('./fonts/Roboto-Black.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 900;
 }
 
 @font-face {

@@ -3,6 +3,7 @@ import { Modes } from '../ModelPage/ModelPage';
 import Information from '../Information/Information';
 import styles from './SidePanel.module.css';
 import CloseBtn from '../CloseBtn/CloseBtn';
+import ColorPicker from '../ColorPicker/ColorPicker'
 
 function SidePanel(props) {
   var { mode, work, visible, setVisible, setMode } = props;
@@ -85,21 +86,14 @@ function SidePanel(props) {
               <CloseBtn Click={() => setVisible(false)} isOpen={visible} />
             </div>
 
-            <div className={`${styles.sidePanelBody}`}>
+
               {/* Description */}
-              {/* <div className={`${styles.infoImage}`}></div>
-              <div
-                className={`${styles.infoBody} ${visible ? '' : styles.hidden}`}
-              >
-                {work.desc}
-              </div> */}
-              <Information visible={visible} data={work}></Information>
+              {mode === "Information"?               <Information visible={visible} data={work}></Information>: ""}
+              {/* Color Picker */}
+              <ColorPicker></ColorPicker>
 
               {/* Ruler */}
-
-              
-
-            </div>
+            
           </div>
         </div>
       </div>
