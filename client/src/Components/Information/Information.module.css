@@ -8,39 +8,34 @@
 .infoBody {
   font-family: 'Roboto';
   opacity: 1;
-  animation: textReveal 1s forwards;
+  /* animation: textReveal 1s forwards; */
 }
 
+/* .infoBody.hidden {
+  animation: textHide 1s forwards;
+} */
+
 @keyframes textReveal {
-  0%{
+  0% {
     opacity: 0%;
   }
-  75%{
+  75% {
     opacity: 0%;
   }
-  100%{
+  100% {
     opacity: 100%;
   }
 }
 
 @keyframes textHide {
-  0%{
+  0% {
     opacity: 100%;
   }
-  15%{
+  15% {
     opacity: 0;
   }
 
-  100%{
+  100% {
     opacity: 0%;
   }
-}
-
-.infoBody.hidden {
-  animation: textHide 1s forwards;
-}
-
-.sidePanelBody{
-  overflow: scroll;
-  width: 100%;
 }
