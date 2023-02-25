@@ -13,6 +13,7 @@
 
 .active {
   display: block;
+  overflow-y: hidden;
 }
 
 .App-logo {
