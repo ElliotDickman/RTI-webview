@@ -7,7 +7,12 @@
 .App {
   background-color: var(--white);
   box-sizing: border-box;
-  margin: 1rem;
+  margin: 0 1rem;
+  display: none;
+}
+
+.active {
+  display: block;
 }
 
 .App-logo {
