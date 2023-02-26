@@ -4,6 +4,7 @@ import Information from '../Information/Information';
 import styles from './SidePanel.module.css';
 import CloseBtn from '../CloseBtn/CloseBtn';
 import ColorPicker from '../ColorPicker/ColorPicker';
+import Ruler from '../Ruler/Ruler';
 
 function SidePanel(props) {
   var { mode, work, visible, setVisible, setMode } = props;
@@ -104,6 +105,7 @@ function SidePanel(props) {
               )}
 
               {/* Ruler */}
+              {mode === 'Ruler' ? <Ruler visible={visible}></Ruler> : ''}
             </div>
           </div>
         </div>

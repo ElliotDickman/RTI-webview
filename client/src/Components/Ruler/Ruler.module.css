@@ -1,0 +1,29 @@
+@import url('../../Styles/styles.css');
+
+.BreakLine {
+  height: 1px;
+  width: 100%;
+  background-color: var(--gray-mid);
+}
+
+.RulerContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.RulerStat {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+
+  font-size: .75rem;
+}
+
+.RulerStat p {
+  font-weight: 500;
+}
+
+.RulerStat span {
+  font-weight: 300;
+}
