@@ -1,0 +1,127 @@
+.container {
+    margin-top: 1rem;
+    display: flex;
+}
+
+.itemsContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    flex-grow: 1;
+}
+
+.shrinkItemsContainer {
+    grid-template-columns: repeat(3, 1fr);
+    width: 75%;
+}
+
+.modal {
+    border-radius: 8px;
+    margin-left: 1rem;
+    overflow: hidden;
+    background-color: var(--gray-light);
+    height: fit-content;
+    position: relative;
+}
+
+.modalContent {
+    position: relative;
+    margin: 1rem;
+}
+
+.modalImage {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.modalName {
+    font-size: 1.5rem;
+}
+
+.pill {
+    width: fit-content;
+    margin-left: auto;
+}
+
+.modalDesignerContainer {
+    border-radius: 9999px;
+    background-color: var(--gray-mid);
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    font-size: 0.75rem;
+    padding: 0.25rem 1rem;
+    gap: 0.5rem;
+}
+
+.modalDesigner {
+}
+
+.modalDesignerYear {
+}
+
+.separator {
+    background-color: var(--white);
+    width: 1px;
+    height: 8px;
+}
+
+.informationContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.informationName {
+    font-weight: 600;
+}
+
+.viewButton
+{
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 9999px;
+    padding: 1rem 1rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+}
+
+.viewButtonContainer
+{
+    margin-top: 2rem;
+    display:flex;
+    justify-content: flex-end;
+}
+
+.closeButton {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.switcherContainer {
+    position: absolute;
+    left: 1rem;
+    top: 1.5rem;
+}
+
+.switcher {
+    border-radius: 9999px;
+    background-color: var(--gray-mid);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 1rem;
+}
+
+.switcherText {
+    font-size: 0.75rem;
+    color: var(--white);
+}

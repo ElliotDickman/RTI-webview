@@ -1,3 +1,7 @@
+.logo{
+    margin-bottom: 1rem;
+}
+
 .filterContainer {
     display: flex;
     gap: 1rem;

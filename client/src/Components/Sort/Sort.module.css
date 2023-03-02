@@ -26,6 +26,7 @@
     overflow: hidden;
     position: absolute;
     border: 0.1rem solid var(--gray-mid);
+    background-color: white;
 }
 
 .sortOptionOption {
