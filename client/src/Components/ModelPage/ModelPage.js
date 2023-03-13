@@ -12,7 +12,7 @@ export const Modes = Object.freeze({
 });
 
 function ModelPage(props) {
-  const [activeMode, setActiveMode] = useState(Modes.Info);
+  const [activeMode, setActiveMode] = useState(Modes.Lighting);
   const [showPanel, setShowPanel] = useState(true);
 
   useEffect(() => {

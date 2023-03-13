@@ -5,6 +5,7 @@ import styles from './SidePanel.module.css';
 import CloseBtn from '../CloseBtn/CloseBtn';
 import ColorPicker from '../ColorPicker/ColorPicker';
 import Ruler from '../Ruler/Ruler';
+import Lighting from '../Lighting/Lighting';
 
 function SidePanel(props) {
   var { mode, work, visible, setVisible, setMode } = props;
@@ -12,7 +13,7 @@ function SidePanel(props) {
   console.log(mode);
   return (
     <Fragment>
-      <div className={`${styles.panelContainer}`}>
+      <div className={`${styles.panelContainer} ${visible? '' : styles.hidden}`}>
         {/* Icon buttons */}
         <div className={`${styles.modeIcons}`}>
           {/* Information */}
@@ -28,7 +29,9 @@ function SidePanel(props) {
               }
               setMode(Modes.Info);
             }}
-          ></div>
+          >
+
+          </div>
           {/* Ruler */}
           <div
             className={`${styles.modeIcon} ${
@@ -105,7 +108,11 @@ function SidePanel(props) {
               )}
 
               {/* Ruler */}
-              {mode === 'Ruler' ? <Ruler visible={visible}></Ruler> : ''}
+              {mode === 'Ruler' ? <Ruler start={{x: 12, y: 43}} end={{x: 22, y: 52}} visible={visible}></Ruler> : ''}
+
+              {/* Lighting */}
+              {mode === 'Lighting' ? <Lighting visible={visible}></Lighting> : ''}
+
             </div>
           </div>
         </div>
